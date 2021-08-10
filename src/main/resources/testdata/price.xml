@@ -1,1 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testData  xmlns:xi="http://www.w3.org/2001/XInclude">
 
+	<xi:include href="application-resources.xml" parse="xml"/>
+
+    <inCardText>В корзине</inCardText>
+    <addInCartText>В корзину</addInCartText>
+
+    <priceCard>
+        <title>Покупка услуг (демо)</title>
+        <uri>/price</uri>
+        <tabs>
+            <recommended>
+                <title>Рекомендуемое</title>
+                <uri>/price#recommended</uri>
+                <tariffs>
+                    <tariff>
+                        <id>VacancyStandardPlus</id>
+                        <title>Вакансия Стандарт+</title>
+                        <priceOld>2800</priceOld>
+                        <priceActual>2000 руб.</priceActual>
+                        <offerPlus>+День доступа к базе резюме бесплатно</offerPlus>
+                        <cartView>
+                            <title>Вакансия Стандарт+ —</title>
+                            <priceOld>2 800</priceOld>
+                            <priceActual>2 000 руб.</priceActual>
+                            <descrip> </descrip>
+                            <giftText>День доступа к базе резюме бесплатно</giftText>
+                        </cartView>
+                    </tariff>
+                    <tariff>
+                        <id>WeekAccessToAllRussia</id>
+                        <title>Неделя доступа к резюме в регионе: Вся Россия</title>
+                        <priceOld> </priceOld>
+                        <priceActual>17500 руб.</priceActual>
+                        <offerPlus>+Вакансия Стандарт+ бесплатно</offerPlus>
+                        <cartView>
+                            <title>Неделя доступа к базе резюме —</title>
+                            <priceOld></priceOld>
+                            <priceActual>17 500 руб.</priceActual>
+                            <descrip>Вся Россия</descrip>
+                            <giftText>Вакансия Стандарт+ бесплатно</giftText>
+                        </cartView>
+                    </tariff>
+                </tariffs>
+                <cart>
+                    <totalCost>
+                        <priceOld>20 300</priceOld>
+                        <priceActual>19 500 руб.</priceActual>
+                    </totalCost>
+                </cart>
+            </recommended>
+            <dbaccess>
+                <title>Доступ к базе резюме</title>
+                <uri>/price#dbaccess</uri>
+                <regions>
+                    <default>
+                        <region>Вся Россия</region>
+                    </default>
+                    <selectRegions>
+                        <region>Приволжский федеральный округ</region>
+                        <region>Москва и Московская область</region>
+                    </selectRegions>
+                    <displayedRegions>
+                        <region>Москва и Московская область ✕</region>
+                        <region>Приволжский федеральный округ ✕</region>
+                    </displayedRegions>
+                </regions>
+                <profAreas>
+                    <default>
+                        <profArea>Все профессиональные области</profArea>
+                    </default>
+                    <selectProfArea>
+                        <profArea>Наука, образование</profArea>
+                        <profArea>Закупки</profArea>
+                    </selectProfArea>
+                    <displayedProfArea>
+                        <profArea>Наука, образование ✕</profArea>
+                        <profArea>Закупки ✕</profArea>
+                    </displayedProfArea>
+                </profAreas>
+                <tariffs>
+                    <default>
+                        <tariffLabel>30 дней 58 000 руб.</tariffLabel>
+                        <countRadiobuttons>6</countRadiobuttons>
+                        <totalCost>58 000 руб.</totalCost>
+                    </default>
+                    <tariff>
+                        <title>Экспресс-подбор</title>
+                        <costItems>
+                            <item>7 дней 17 500 руб.</item>
+                            <item>14 дней 30 000 руб.</item>
+                        </costItems>
+                    </tariff>
+                    <tariff>
+                        <title>Поиск специалиста</title>
+                        <costItems>
+                            <item>30 дней 58 000 руб.</item>
+                        </costItems>
+                    </tariff>
+                    <tariff>
+                        <title>Регулярный подбор</title>
+                        <costItems>
+                            <item>3 месяца 168 000 руб.</item>
+                            <item>6 месяцев 320 000 руб.</item>
+                            <item>12 месяцев 530 000 руб.</item>
+                        </costItems>
+                    </tariff>
+                </tariffs>
+                <changeTariff>
+                    <selectButton>
+                        <days>6 месяцев</days>
+                        <cost>320 000</cost>
+                    </selectButton>
+                    <displayedValue>6 месяцев 320 000 руб.</displayedValue>
+                    <totalCost>320 000 руб.</totalCost>
+                    <cartView>
+                        <title>Доступ к базе резюме —</title>
+                        <priceOld></priceOld>
+                        <priceActual>320 000 руб.</priceActual>
+                        <descrip></descrip>
+                        <giftText>Вакансия Стандарт+ бесплатно</giftText>
+                    </cartView>
+                </changeTariff>
+                <addToCart>
+                    <cartView>
+                        <title>Доступ к базе резюме —</title>
+                        <priceOld></priceOld>
+                        <priceActual>58 000 руб.</priceActual>
+                        <descrip></descrip>
+                        <giftText>Вакансия Стандарт+ бесплатно</giftText>
+                    </cartView>
+                </addToCart>
+            </dbaccess>
+            <publications>
+                <title>Публикации вакансий</title>
+                <uri>/price#publications</uri>
+                <default>
+                    <publication>
+                        <title>Стандарт</title>
+                        <amount>1шт.</amount>
+                        <cost>600 руб.</cost>
+                    </publication>
+                    <publication>
+                        <title>Стандарт +</title>
+                        <amount>1шт.</amount>
+                        <cost>2 800 руб.</cost>
+                    </publication>
+                    <publication>
+                        <title>Премиум</title>
+                        <amount>1шт.</amount>
+                        <cost>8 000 руб.</cost>
+                    </publication>
+                    <publication>
+                        <title>Анонимная</title>
+                        <amount>1шт.</amount>
+                        <cost>3 000 руб.</cost>
+                    </publication>
+                </default>
+                <changeAmount>
+                    <amount>3</amount>
+                    <cost>8 400</cost>
+                    <cur>руб.</cur>
+                </changeAmount>
+                <cartView>
+                    <title>1 анонимная вакансия по 3 000 —</title>
+                    <priceOld></priceOld>
+                    <priceActual>3 000 руб.</priceActual>
+                    <descrip></descrip>
+                    <giftText>День доступа к базе резюме бесплатно</giftText>
+                </cartView>
+                <discountRate>
+                    <link>
+                        <amount>10</amount>
+                        <cost>510</cost>
+                    </link>
+                    <view>
+                        <amount>10шт.</amount>
+                        <cost>5 100 руб.</cost>
+                        <oldCost>6 000 руб.</oldCost>
+                    </view>
+                    <cart>
+                        <title>10 вакансий Стандарт по 510 —</title>
+                        <priceOld>6 000</priceOld>
+                        <priceActual>5 100 руб.</priceActual>
+                        <descrip></descrip>
+                        <giftText>День доступа к базе резюме бесплатно</giftText>
+                    </cart>
+                </discountRate>
+            </publications>
+            <additional>
+                <title>Дополнительные услуги</title>
+                <uri>/price#additional</uri>
+            </additional>
+        </tabs>
+    </priceCard>
+
+</testData>
